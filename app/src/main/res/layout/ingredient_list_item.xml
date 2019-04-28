@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="36dp"
+    android:orientation="horizontal"
+    android:background="@drawable/customer_border">
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/check_box"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_weight="0.8"
+        android:text="@string/topping"
+        android:textSize="20sp"
+        android:layout_marginLeft="16dp"
+        />
+    <ImageView
+        android:id="@+id/check_box_image"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_weight="0.2"
+        android:src="@drawable/sauce_tomato_icon"
+        android:layout_marginRight="16dp"
+        android:padding="1dp"
+        />
+
+</LinearLayout>

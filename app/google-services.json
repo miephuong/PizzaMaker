@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "1090443928549",
+    "firebase_url": "https://pizzamaker-ca6cb.firebaseio.com",
+    "project_id": "pizzamaker-ca6cb",
+    "storage_bucket": "pizzamaker-ca6cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1090443928549:android:77f982fe961cef18",
+        "android_client_info": {
+          "package_name": "com.example.pizzamaker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1090443928549-7bopqb2air14s82dokifur706l384ht3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pizzamaker",
+            "certificate_hash": "2d088174ae4f4d199417010031cea51c60119cce"
+          }
+        },
+        {
+          "client_id": "1090443928549-hok6gh99em11lu43u78cj6q9fksag3ed.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pizzamaker",
+            "certificate_hash": "1cf9912751d80bb29338958fcfe7241238a9380c"
+          }
+        },
+        {
+          "client_id": "1090443928549-b2tkv6uja52hmaat3m0ehifcdhtesdbd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhHfjcJRQ9GMVaZr088PX6LFVW2hjdgDU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1090443928549-b2tkv6uja52hmaat3m0ehifcdhtesdbd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

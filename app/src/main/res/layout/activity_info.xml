@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/customer_background"
+    android:orientation="vertical"
+    tools:context=".Info">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/toolbarStyle">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/colorPrimary"
+            android:layout_weight="1"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:title="@string/about_us">
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/concept_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/customer_background"
+                android:gravity="right"
+                android:text="The Pizza Maker® Concept"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/concept_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="30dp"
+                android:paddingRight="6dp"
+                android:gravity="right"
+                android:text="The Pizza Maker® e-restaurant represents a brand spanking new concept in the food service industry.\nThat is, the freedom of choice of ingredients.\nThat's right, you can choose whichever ingredients you like, and we'll whip it up for you, \nwith those exact ingredients!\nWith just a matter of a few clicks, you can have the kind of pizza you desire\nNot only are we efficient, competent and good at cooking, we also guarantee you a greate experience on what it means to achieve complete convenience."
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/findus_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/customer_background"
+                android:text="Find Us"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/findus_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="30dp"
+                android:gravity="left"
+                android:text="Address: \n25 Wall Street, NYC, NY.\n\nTEL:\n748820009\n\nEmail:\npizzamaker@mail.com"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/visit_webpage_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/customer_background"
+                android:gravity="center"
+                android:text="Visit our Website"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/visit_webpage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                style="@style/ButtonStyle"
+                android:onClick="visitPage"
+                android:text="http://www.pizzamaker.com"
+                android:textSize="14sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginHorizontal="16dp"/>
+
+            <EditText
+                android:id="@+id/comment_field"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/customer_border"
+                android:focusable="true"
+                android:hint="@string/write_us_a_comment"
+                android:inputType="text"
+                tools:ignore="Autofill" />
+
+            <Button
+                android:id="@+id/submit_comment_button"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="16dp"
+                android:onClick="submitComment"
+                android:text="@string/submit_comment" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

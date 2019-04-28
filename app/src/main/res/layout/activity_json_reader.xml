@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/customer_background"
+
+    tools:context=".JsonReader">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/toolbarStyle">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/colorPrimary"
+            android:layout_weight="1"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:title="@string/about_us">
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:id="@+id/textview_see_profile"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/appbar"
+        android:background="@drawable/customer_border"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/button_see_profile"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="47dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="loadJson"
+        android:text="See profile" />
+
+</RelativeLayout>

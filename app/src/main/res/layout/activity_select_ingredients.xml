@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectIngredients.SelectIngredients"
+    android:orientation="vertical"
+    android:background="@drawable/customer_background"
+    >
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/toolbarStyle">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/colorPrimary"
+            android:layout_weight="1"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:title="Build your pizza">
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+            <TextView
+                android:id="@+id/toppingTitle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Sauce"
+                android:textStyle="bold"
+                android:background="@android:color/holo_red_dark"
+                android:paddingVertical="5dp"
+                android:textSize="22sp"
+                />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/sauce_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_below="@id/toppingTitle">
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/cheeseTitle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Toppings"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_below="@id/sauce_recyclerView"
+                android:background="@android:color/holo_red_dark"
+                android:paddingVertical="5dp"
+                android:layout_marginTop="10dp"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/topping_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_below="@+id/cheeseTitle">
+
+            </android.support.v7.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:onClick="submitButton"
+            android:text="Submit order"
+            android:layout_alignParentBottom="true"
+            style="@style/ButtonStyle"
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

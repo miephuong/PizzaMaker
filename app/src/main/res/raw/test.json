@@ -1,0 +1,16 @@
+{
+  "users":
+    {
+      "firstname": "John",
+      "age": 30,
+      "mail": "john@gmail.com",
+      "address": [
+        {
+          "street": "25 Wall Street",
+          "city": "NYC"
+        }
+      ]
+    }
+
+
+}

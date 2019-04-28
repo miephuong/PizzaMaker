@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginRegister"
+    android:paddingTop="270dp"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:background="@drawable/customer_background"
+    >
+
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/prompt_username"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        tools:layout_editor_absoluteX="3dp"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/prompt_password"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="308dp"
+        app:layout_constraintBottom_toTopOf="@+id/login_button"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        style="@style/ButtonStyle"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="371dp"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        android:onClick="loginButton"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/register_button"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/register_new_user"
+        android:gravity="center"
+        android:onClick="registerButton"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        tools:layout_editor_absoluteX="10dp" />
+</android.support.constraint.ConstraintLayout>
